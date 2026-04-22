@@ -7,7 +7,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header class="bg-white shadow">
+<header class="sticky top-0 z-50 bg-white shadow ">
   <nav class="max-w-8xl mx-auto flex items-center gap-6 p-4">
 
     <!-- <div class="text-xl font-bold text-green-900">
