@@ -1,0 +1,48 @@
+/*
+Theme Name: Coffee(Starbucks)Theme
+Description: A Starbucks inspired theme for WordPress.
+Version: 1.0.0
+Author: Hilary Mae Poralan
+Text Domain: coffeestarbuckstheme
+*/
+/* Submenu container */
+.footer-menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px !important;
+}
+.footer-menu .sub-menu {
+  margin-top: 5px;
+  padding-left: 0;
+}
+
+/* Submenu items */
+.footer-menu .sub-menu li a {
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+  transition: 0.3s;
+  font-weight: light;
+  color: rgba(0, 0, 0, .67);
+}
+
+/* Hover effect */
+.footer-menu .sub-menu li a:hover {
+  opacity: 1;
+  color: rgba(0,0,0,0.87); 
+}
+
+.main-menu li:hover{
+    color: green;
+}
+
+.custom-logo-link img {
+    width: 50px !important;
+    height: auto;
+}
