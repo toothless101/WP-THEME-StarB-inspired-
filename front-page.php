@@ -1,8 +1,15 @@
 <?php get_header(); ?>
 
-<section class="relative h-screen flex items-center justify-center text-center" style="height: 100vh; background-image: url('<?php echo get_header_image(); ?>'); background-size: cover; background-position: center;">
-    <div class="relative z-10 px-4">
-        <a href="#blog" class="bg-[#C69C6D] text-[#3E2723] px-8 py-3 rounded-lg font-semibold hover:bg-[#b68d5f] transition">
+<section class="relative h-screen flex flex-col items-center justify-center text-center" style="background-image: url('<?php echo get_header_image(); ?>'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-[#3E2723]/70"></div>
+    <div class="relative z-5 flex flex-col items-center justify-between  py-20">
+        <h1 class="text-5xl font-extrabold tracking-widest text-[#ffff]">
+            <?php echo get_theme_mod('title_text'); ?>
+        </h1>
+        <p class="text-xl md:text-xl text-[#F5E6CC] mb-8 max-w-xl mx-auto">
+           <?php echo get_theme_mod('sub-hero-tag'); ?>
+        </p>
+        <a href="" class="bg-[#C69C6D] text-[#3E2723] px-8 py-3 rounded-lg mt-8 font-semibold hover:bg-[#b68d5f] transition">
             Explore Blog
         </a>
     </div>
@@ -35,7 +42,7 @@
                     <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
                 </p>
 
-                <a href="<?php the_permalink(); ?>" class="inline-block mt-9  text-sm font-semibold text-black hover:border-black-500 border border-black px-4 py-2 rounded-full transition-colors duration-30">
+                <a href="<?php the_permalink(); ?>" class="inline-block mt-9  border-2 border-[#C69C6D] text-[#3E2723] px-8 py-3 rounded-lg font-semibold hover:bg-[#b68d5f] transition">
                     Read More ->
                 </a>
 

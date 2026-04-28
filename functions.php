@@ -48,3 +48,69 @@ function new_coffee_theme_setup() {
     ]);
 }
 add_action('after_setup_theme', 'new_coffee_theme_setup');
+
+//Hero Section Customizer
+function my_customize($wp_customize){
+    $wp_customize->add_section('hero_section', array(
+        'title'=>"Hero Section"
+    ));
+
+    $wp_customize->add_setting('title_text', array(
+        'default' => 'Welcome to Our Coffee Blog'
+    ));
+
+    $wp_customize->add_control('title_text', array(
+        'label'=>'Hero Title',
+        'section'=>'hero_section',
+        'type'=>'text'
+    ));
+
+    $wp_customize->add_setting('sub-hero-tag', array(
+        'default' => 'Discover the world of coffee, one story at a time.'
+    ));
+
+    $wp_customize->add_control('sub-hero-tag', array(
+        'label'=>'Sub Hero Tag',
+        'section'=>'hero_section',
+        'type'=>'text'
+    ));
+}
+add_action('customize_register', 'my_customize');
+
+function contact_customize($wp_customize){
+    $wp_customize->add_section('contact_hero_section', array(
+        'title' => 'Contact Hero Section'
+    ));
+
+    $wp_customize->add_setting('contact_hero_title', array(
+        'default' => 'Get in Touch With Us'
+    ));
+
+    $wp_customize->add_control('contact_hero_title', array(
+        'label' => 'Contact Hero Section',
+        'section' => 'contact_hero_section',
+        'type' => 'text'    
+    ));
+
+    $wp_customize->add_setting('contact_hero_subtitle', array(
+        'default'=>'How can we help you?'
+    ));
+
+    $wp_customize->add_control('contact_hero_subtitle', array(
+        'label' => 'Contact Hero Subtitle',
+        'section' => 'contact_hero_subsection',
+        'type' => 'text'
+    ));
+    
+    $wp_customize->add_setting('contact_bg_image');
+
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize, 'contact_bg_image', array(
+            'label' => 'Contact Background Image',
+            'section'=>'contact_hero_section',
+            'setting'=>'contact_bg_image'
+        )
+    ));
+}
+
+add_action('customize_register', 'contact_customize');

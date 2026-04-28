@@ -46,3 +46,9 @@ Text Domain: coffeestarbuckstheme
     width: 50px !important;
     height: auto;
 }
+
+.current-menu-item > a {
+  color: #2F4F2F;
+  font-weight: bold;
+  border-bottom: 2px solid #2F4F2F;
+}
