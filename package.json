@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "tailwindcss -i style-src.css -o assets/main.css",
-    "build-zip": "powershell Compress-Archive -Force -Path index.php,header.php,functions.php,footer.php,style.css,front-page.php,page.php,page-contact.php -DestinationPath coffee-theme.zip",
+    "build-zip": "powershell Compress-Archive -Force -Path index.php,style.css,assets/main.css,footer.php,functions.php,front-page.php,header.php,page-contact.php,Screenshot.jpg,single.php,home.php -DestinationPath new-coffee-theme.zip",
     "build": "npm run build-css && npm run build-zip"
   },
   "keywords": [],

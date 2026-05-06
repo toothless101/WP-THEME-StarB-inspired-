@@ -15,7 +15,6 @@ add_action('wp_enqueue_scripts', 'register_styles');
 function my_theme_setup(){
     add_theme_support('post-thumbnails');
 }
-
 add_action('after_setup_theme', 'my_theme_setup');
 
 function new_coffee_theme_setup() {
@@ -98,7 +97,7 @@ function contact_customize($wp_customize){
 
     $wp_customize->add_control('contact_hero_subtitle', array(
         'label' => 'Contact Hero Subtitle',
-        'section' => 'contact_hero_subsection',
+        'section' => 'contact_hero_section',
         'type' => 'text'
     ));
     

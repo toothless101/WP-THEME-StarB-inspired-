@@ -1,7 +1,7 @@
 /*
-Theme Name: Coffee(Starbucks)Theme
+Theme Name: Coffee(Starbucks Inspired)Theme
 Description: A Starbucks inspired theme for WordPress.
-Version: 1.0.0
+Version: 1.0.3
 Author: Hilary Mae Poralan
 Text Domain: coffeestarbuckstheme
 */
@@ -35,7 +35,7 @@ Text Domain: coffeestarbuckstheme
 /* Hover effect */
 .footer-menu .sub-menu li a:hover {
   opacity: 1;
-  color: rgba(0,0,0,0.87); 
+  color: rgba(0,0,0,0.87) !important; 
 }
 
 .main-menu li:hover{
